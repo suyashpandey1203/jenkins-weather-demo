@@ -14,20 +14,20 @@ pipeline {
 
         stage('Install') {
             steps {
-                sh 'npm install'
+                bat 'npm install'
             }
         }
 
         stage('Test') {
             steps {
-                sh 'npm test'
+                bat 'npm test'
             }
         }
 
         stage('Deploy') {
             steps {
                 echo 'Simulating deployment...'
-                sh 'echo Weather report system is now live!'
+                bat 'echo Weather report system is now live!'
             }
         }
     }
