@@ -2,13 +2,13 @@ pipeline {
     agent any
 
     tools {
-        nodejs "NodeJS 18"
+        nodejs "NodeJS"
     }
 
     stages {
         stage('Clone') {
             steps {
-                git 'https://github.com/YOUR_USERNAME/jenkins-weather-demo.git'
+                git 'https://github.com/suyashpandey1203/jenkins-weather-demo.git'
             }
         }
 
