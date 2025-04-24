@@ -8,7 +8,7 @@ pipeline {
     stages {
         stage('Clone') {
             steps {
-                git 'https://github.com/suyashpandey1203/jenkins-weather-demo.git'
+                git branch: 'main',url: 'https://github.com/suyashpandey1203/jenkins-weather-demo.git'
             }
         }
 
